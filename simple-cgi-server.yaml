@@ -1,0 +1,14 @@
+Address: ":8080"
+DocumentRoot: /var/www
+InheritEnv:
+  - HGWEB_CONFIG
+AliasList:
+  - Source: /
+  - Target: /hgweb.cgi
+HandlerList:
+  - FileExt: .py
+    Handler: python
+  - FileExt: .cgi
+    Handler: python
+Logging:
+  Level: info
