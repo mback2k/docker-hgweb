@@ -1,13 +1,12 @@
 Address: ":8080"
 DocumentRoot: /var/www
 InheritEnv:
+  - HTTPS
   - HGWEB_CONFIG
 AliasList:
   - Source: /
   - Target: /hgweb.cgi
 HandlerList:
-  - FileExt: .py
-    Handler: python
   - FileExt: .cgi
     Handler: python
 Logging:
