@@ -8,6 +8,6 @@ AliasList:
   - Target: /hgweb.cgi
 HandlerList:
   - FileExt: .cgi
-    Handler: python
+    Handler: python3
 Logging:
   Level: info
