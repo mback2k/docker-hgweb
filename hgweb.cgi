@@ -5,7 +5,7 @@
 
 # Path to repo or hgweb config to serve (see 'hg help hgweb')
 import os
-config = os.environ.get("HGWEB_CONFIG", b"/path/to/repo/or/config")
+config = os.environ.get("HGWEB_CONFIG", "/path/to/repo/or/config").encode('utf-8')
 
 # Uncomment and adjust if Mercurial is not installed system-wide
 # (consult "installed modules" path from 'hg debuginstall'):
