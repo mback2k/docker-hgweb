@@ -1,4 +1,4 @@
-FROM mback2k/simple-cgi-server
+FROM ghcr.io/mback2k/simple-cgi-server:latest
 
 USER root
 
